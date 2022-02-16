@@ -10,8 +10,8 @@ services:
     environment:
       - BASE_URL=/
       - SWAGGER_FILE=/tmp/swagger.yaml
-    # volumes:
-    #   - ./swagger.yaml:/tmp/swagger.yaml
+    volumes:
+      - ./swagger.yaml:/tmp/swagger.yaml
 
   sw-ui:
     image: swaggerapi/swagger-ui
